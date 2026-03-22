@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claudio Soto — Portafolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- Header -->
+<header class="site-header" data-header>
+  <div class="container header-inner">
+
+    <!-- Logo -->
+    <a href="index.html" class="brand" aria-label="Ir al Home">
+      <p class="brand-title">Claudio Soto <span class="brand-mark">®</span></p>
+      <p class="brand-subtitle">Diseño, branding y proyectos digitales</p>
+    </a>
+
+    <!-- Botón Menu (siempre visible) -->
+    <button
+      class="menu-btn"
+      type="button"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      data-menu-toggle
+    >
+      Menu
+    </button>
+
+  </div>
+
+  <!-- Panel del menú -->
+  <div class="menu-panel" aria-hidden="true" data-menu-panel>
+    <nav class="menu-nav" aria-label="Navegación principal">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </div>
+
+  <!-- Backdrop (click fuera para cerrar) -->
+  <div class="menu-backdrop" hidden data-menu-backdrop></div>
+</header>
+
+    <main id="contenido">
+      <!-- Hero slider -->
+      <section class="hero" aria-label="Portada">
+        <div class="container">
+          <div class="hero-frame hero-slider" data-slider>
+            <div class="hero-viewport" data-slider-viewport>
+              <div class="hero-track" data-slider-track>
+                <!-- Slide 1 -->
+                <article class="hero-slide" data-slide aria-roledescription="slide" aria-label="1 de 3">
+                  <video
+  class="project-hero-video"
+  autoplay
+  muted
+  loop
+  playsinline
+  preload="metadata"
+  poster="videos/projects/singular/hero-poster.jpg"
+>
+  <source src="videos/projects/singular/intro.mp4" type="video/mp4" />
+</video>
+                  <div class="hero-caption">
+                    <span class="hero-caption-title">Singular</span>
+                    <span class="hero-caption-sep">·</span>
+                    <span class="hero-caption-meta">Branding inmobiliario · Santiago</span>
+                  </div>
+                </article>
+
+                <!-- Slide 2 -->
+                <article class="hero-slide" data-slide aria-roledescription="slide" aria-label="2 de 3">
+                  <video
+  class="project-hero-video"
+  autoplay
+  muted
+  loop
+  playsinline
+  preload="metadata"
+  poster="videos/projects/jazz-zone/intro.mp4"
+>
+  <source src="videos/projects/jazz-zone/intro.mp4" type="video/mp4" />
+</video>
+
+                  <div class="hero-caption">
+                    <span class="hero-caption-title">Jazz Zone</span>
+                    <span class="hero-caption-sep">·</span>
+                    <span class="hero-caption-meta">Identidad Visual</span>
+                  </div>
+                </article>
+
+                <!-- Slide 3 -->
+                <article class="hero-slide" data-slide aria-roledescription="slide" aria-label="3 de 3">
+                  <video
+  class="project-hero-video"
+  autoplay
+  muted
+  loop
+  playsinline
+  preload="metadata"
+  poster="videos/projects/ingevec/intro.mp4"
+>
+  <source src="videos/projects/ingevec/intro.mp4" type="video/mp4" />
+</video>
+
+                  <div class="hero-caption">
+                    <span class="hero-caption-title">Ingevec</span>
+                    <span class="hero-caption-sep">·</span>
+                    <span class="hero-caption-meta">Branding Inmobiliario</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="hero-controls">
+              <button class="hero-btn hero-btn--prev" type="button" data-slider-prev aria-label="Anterior">‹</button>
+              <button class="hero-btn hero-btn--next" type="button" data-slider-next aria-label="Siguiente">›</button>
+            </div>           
+          </div>  
+          <!-- Dots -->
+          <div class="hero-dots" data-slider-dots aria-label="Paginación del slider"></div>
+        </div>
+      </section>
+
+      <!-- Casos y proyectos -->
+      <section class="cases">
+        <div class="container section-head">
+          <h2 class="section-title">Casos y proyectos</h2>
+          <p class="section-desc">
+            Diseño para distintas marcas, con foco en diferenciación y generación de sistemas visuales funcionales y de alto impacto visual. Clientes de chile y Perú.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="cases-grid" aria-label="Grilla de proyectos">
+
+            <a class="case-card case-a" href="project.html" aria-label="Proyecto Singular">
+            <div class="card-media">
+            <img
+            src="images/projects/singular/Singular Cover.png"
+            alt="Singular — Identidad visual inmobiliaria"
+            loading="lazy"
+      />
+    </div>
+
+    <div class="card-meta">
+      <p class="card-title">Singular</p>
+      <p class="card-subtitle">Identidad visual</p>
+    </div>
+</a>
+
+            <a class="case-card case-b" href="Project3.html" aria-label="Proyecto 02">
+              <div class="card-media">
+                <img
+                  src="images/projects/ingevec/ingevec-cover.png"
+                  alt="Ingevec — Identidad visual inmobiliaria"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="card-meta">
+                <p class="card-title">Ingevec</p>
+                <p class="card-subtitle">Branding inmobiliario</p>
+              </div>
+            </a>
+
+            <a class="case-card case-c"  aria-label="Proyecto 03">
+              <div class="card-media">
+                <img
+                  src="images/projects/Busi/Busi Cover.png"
+                  alt="Busi — Identidad visual"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-meta">
+                <p class="card-title">Busi</p>
+                <p class="card-subtitle">Periodismo visual (en proceso)</p>
+              </div>
+            </a>
+
+            <a class="case-card case-d" href="project2.html" aria-label="Proyecto 04">
+              <div class="card-media">
+                <img
+                  src="images/projects/jazz-zone/Jazz Zone Cover.png"
+                  alt="Jazz Zone — Identidad visual"
+                  loading="lazy"
+                /> 
+              </div>
+              <div class="card-meta">
+                <p class="card-title">Jazz Zone</p>
+                <p class="card-subtitle">Identidad visual</p>
+              </div>
+            </a>
+
+            <a class="case-card case-e"  aria-label="Proyecto 05">
+              <div class="card-media">
+                <img
+                  src="images/projects/Socovesa/socovesa-cover.gif"
+                   alt="Socovesa — Marketing digital"
+                  loading="lazy"
+                /> 
+              </div>
+              <div class="card-meta">
+                <p class="card-title">Socovesa</p>
+                <p class="card-subtitle">Marketing digital (en proceso)</p>
+              </div>
+            </a>
+
+            <a class="case-card case-f"  aria-label="Proyecto 06">
+              <div class="card-media">
+                <img
+                  src="images/projects/Teatro Anonimo/Teatro Anonimo cover.png"
+                  alt="Teatro Anónimo — Diseño web editorial"
+                  loading="lazy"
+                /> 
+              </div>
+              <div class="card-meta">
+                <p class="card-title">Teatro Anónimo</p>
+                <p class="card-subtitle">Diseño web editorial (en proceso)</p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Manifiesto / Pausa -->
+      <section class="manifest">
+        <div class="container manifest-inner">
+          <p class="manifest-text">
+            “Diseño desde el ritmo y la intuición.<br>
+            Construyo sistemas que funcionan porque conectan.<br>
+            Más que comunicar, busco generar emoción“.
+          </p>
+        </div>
+      </section>
+
+      <!-- Trabajos seleccionados (full-bleed marquee) -->
+      <section class="selected">
+        <div class="container section-head">
+          <h2 class="section-title">Trabajos seleccionados</h2>
+        </div>
+
+        <div class="selected-bleed">
+          <div class="selected-viewport" data-marquee-viewport aria-label="Galería de trabajos seleccionados">
+            <div class="selected-track" data-marquee-track>
+
+              <!-- Item 1 -->
+              <a class="carousel-card" href="javascript:void(0)" aria-label="Trabajo 01" data-lightbox>
+                <div class="selected-media" aria-hidden="true">
+                <img
+                  src="images/carrusel/Miles-in-Tokio-Poster.png"
+                  alt="Miles in Tokio — Diseño de cartel"
+                  loading="lazy"
+                /> 
+              </div>
+                <div class="caption">
+                  <span>Diseño de poster</span><span>Adobe Photoshop</span><span>2025</span>
+                </div>
+              </a>
+
+              <!-- Item 2 -->
+              <a class="carousel-card" href="javascript:void(0)" aria-label="Trabajo 02" data-lightbox>
+                <div class="selected-media" aria-hidden="true">
+                <img
+                  src="images/carrusel/Afrocarepalo.png"
+                  alt="Ilustración técnica mixta"
+                  loading="lazy"
+                /> 
+                </div>
+                <div class="caption">
+                  <span>Ilustración técnica mixta</span><span>Marcadores, estilógrafos y Adobe Photoshop</span><span>2022</span>
+                </div>
+              </a>
+
+              <!-- Item 3 -->
+              <a class="carousel-card" href="javascript:void(0)" aria-label="Trabajo 03" data-lightbox>
+                <div class="selected-media" aria-hidden="true">
+                <img
+                  src="images/carrusel/jack.jpeg"
+                  alt="Jack Blood — Ilustración hiperrealista"
+                  loading="lazy"
+                /> 
+                </div>
+                <div class="caption">
+                  <span>Ilustración hiperrealista</span><span>Lápices de color</span><span>2018</span>
+                </div>
+              </a>
+
+              <!-- Item 4 -->
+              <a class="carousel-card" href="javascript:void(0)" aria-label="Trabajo 04" data-lightbox>
+                <div class="selected-media" aria-hidden="true">
+                <img
+                  src="images/carrusel/Este es el país.jpg"
+                  alt="Este es el país — Portada de sencillo musical"
+                  loading="lazy"
+                /> 
+                </div>
+                <div class="caption">
+                  <span>Portada de sencillo musical</span><span>Adobe Photoshop</span><span>2025</span>
+                </div>
+              </a>
+
+               <!-- Item 5 -->
+              <a class="carousel-card" href="javascript:void(0)" aria-label="Trabajo 05" data-lightbox>
+                <div class="selected-media" aria-hidden="true">
+                <img
+                  src="images/carrusel/Caustica logo.gif"
+                  alt="Caustica — Logo"
+                  loading="lazy"
+                /> 
+                </div>
+                <div class="caption">
+                  <span>Logotipo para proyección cultural</span><span>Adobe Illustrator y after effects</span><span>2022</span>
+                </div>
+              </a>
+
+               <!-- Item 6 -->
+              <a class="carousel-card" href="javascript:void(0)" aria-label="Trabajo 06" data-lightbox>
+                <div class="selected-media" aria-hidden="true">
+                <img
+                  src="images/carrusel/Fiesta mojito.png"
+                  alt="Fiesta mojito — Diseño de etiqueta para mojito embotellado"
+                  loading="lazy"
+                /> 
+                </div>
+                <div class="caption">
+                  <span>Diseño de etiqueta para mojito embotellado</span><span>Adobe Illustrator</span><span>2022</span>
+                </div>
+              </a>
+
+               <!-- Item 7 -->
+              <a class="carousel-card" href="javascript:void(0)" aria-label="Trabajo 07" data-lightbox>
+                <div class="selected-media" aria-hidden="true">
+                <img
+                  src="images/carrusel/Memoria Engie.gif"
+                  alt="Memoria Engie — Diseño editorial para memoria anual"
+                  loading="lazy"
+                /> 
+                </div>
+                <div class="caption">
+                  <span>Diseño editorial para memoria anual</span><span>Adobe Indesign e Illustrator</span><span>2019</span>
+                </div>
+              </a>
+
+               <!-- Item 8 -->
+              <a class="carousel-card" href="javascript:void(0)" aria-label="Trabajo 08" data-lightbox>
+                <div class="selected-media" aria-hidden="true">
+                <img
+                  src="images/carrusel/Memoria-JNE.png"
+                  alt="Memoria JNE — Diseño de portada para publicación del JNE"
+                  loading="lazy"
+                /> 
+                </div>
+                <div class="caption">
+                  <span>Diseño de portada para publicación del JNE</span><span>Adobe Photoshop e Illustrator</span><span>2018</span>
+                </div>
+              </a>
+
+              <!-- Item 9 -->
+              <a class="carousel-card" href="javascript:void(0)" aria-label="Trabajo 09" data-lightbox>
+                <div class="selected-media" aria-hidden="true">
+                <img
+                  src="images/carrusel/a-love-supreme.png"
+                  alt="A Love Supreme — Ilustración digital"
+                  loading="lazy"
+                /> 
+                </div>
+                <div class="caption">
+                  <span>A Love Supreme — Ilustración digital</span><span>Adobe Photoshop</span><span>2020</span>
+                </div>
+              </a>
+
+              <!-- Item 10 -->
+              <a class="carousel-card" href="javascript:void(0)" aria-label="Trabajo 10" data-lightbox>
+                <div class="selected-media" aria-hidden="true">
+                <img
+                  src="images/carrusel/Don-Vito-Logo.png"
+                  alt="Don Vito — Logotipo"
+                  loading="lazy"
+                /> 
+                </div>
+                <div class="caption">
+                  <span>Don Vito — Logotipo</span><span>Adobe Illustrator</span><span>2021</span>
+                </div>
+              </a>
+
+              <!-- Item 11 -->
+              <a class="carousel-card" href="javascript:void(0)" aria-label="Trabajo 11" data-lightbox>
+                <div class="selected-media" aria-hidden="true">
+                <img
+                  src="images/carrusel/Enex.png"
+                  alt="Enex — Ilustración"
+                  loading="lazy"
+                /> 
+                </div>
+                <div class="caption">
+                  <span>Enex - Marketing institucional</span><span>Adobe Illustrator y Photoshop</span><span>2018</span>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- Flechas solo en hover (nudges) -->
+            <div class="selected-controls" aria-hidden="false">
+              <button class="selected-btn selected-btn--prev" type="button" data-marquee-prev aria-label="Anterior">‹</button>
+              <button class="selected-btn selected-btn--next" type="button" data-marquee-next aria-label="Siguiente">›</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cierre -->
+      <section class="closing">
+        <div class="container closing-inner">
+          <p class="home-intro">
+            Si te gustó mi trabajo no dudes en contactarme, estaré encantado de escucharte.
+          </p>
+          <p class="closing-desc">
+            Mándame un mensaje, cuéntame lo que tengas en mente y convirtámoslo en algo increíble.
+          </p>
+
+          <div class="closing-cta">
+            <a class="link" href="mailto:claudio.soto@email.com">claudioo.soto@gmail.com</a>
+            <span class="sep" aria-hidden="true">•</span>
+            <a class="link" href="tel:+56900000000">+56 9 4510 6889</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-col">
+          <span class="footer-strong">Claudio Soto</span><br />
+          Diseño, branding y proyectos digitales
+        </p>
+
+        <p class="footer-col">
+          <span class="footer-strong">Contacto</span><br />
+          claudio.soto@email.com
+        </p>
+
+        <p class="footer-col footer-col--right">
+          <span class="footer-strong">Santiago</span><br />
+          2026
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
